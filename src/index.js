@@ -1,9 +1,8 @@
 let intervalID
 
 function changeCity(event){
-    console.log("inside");
+
     //for inner HTML 
- 
     let cityTime= document.querySelector("#cityTime");  
     let cityDate = document.querySelector("#cityDate");
     let cityName = document.querySelector("#cityName");
@@ -14,10 +13,14 @@ function changeCity(event){
 
 
 
-    if (selectedCity.length == 0){
-    
-        selectedCity = "America/Jamaica"
+    if (selectedCity == "current"){
+        console.log("local")
+        selectedCity = moment.tz.guess()
     }
+    else if (selectedCity == 0){
+        selectedCity = "Asia/Krasnoyarsk"
+    }
+ 
     //send out info 
     cityName.innerHTML = selectedCity.split("/")[1];
 
@@ -37,7 +40,7 @@ function changeCity(event){
 
 window.onload = function(){
     //when page opens it immediatley calls the changeCity function wh
-    changeCity ({target: {value:"America/Jamaica"}})
+    changeCity ({target: {value:"Asia/Krasnoyarsk"}})
 };
 
 

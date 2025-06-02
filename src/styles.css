@@ -9,7 +9,7 @@ body{
 
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
 
     padding: 5%;
     width: 50%;
@@ -80,4 +80,10 @@ select{
     align-self: center;
     margin-top: -5%;
 }
+.footer{
+    grid-row: 5;
+    grid-column: 1/ span 4;
+    align-self: center;
+    justify-self: center;
 
+}

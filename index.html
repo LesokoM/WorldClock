@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <div class="transparent-background">
+        <div class="selectCity">
+            <label for="city">Select a city</label>
+            <select name="city" id="city">
+                <option value="">Select a city</option>
+                 <option value="current">Your current location</option>
+                <option value="Africa/Johannesburg">Johannesburg</option>
+                <option value="Asia/Bangkok">Bangkok</option>
+                <option value="Europe/Moscow">Moscow</option>
+            </select>
+        </div>
+
+
+
+        <div class="cityInfo">
+            <div id="cityName">Los Angeles</div>
+            <div id="cityDate">October 8th 2022</div>
+            <div id="cityTime"> 10:27:09 AM </div>
+        </div>     
+      
+
+    </div>
+
+
+<script src="src/index.js"></script>
+</body>
+</html>
